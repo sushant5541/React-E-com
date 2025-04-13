@@ -15,8 +15,8 @@ function ProductSection(){
     useEffect(getProducts, [])
 
     return (
-        <div class="container bg-white">
-            <div class="row mt-5">
+        <div className="container bg-white">
+            <div className="row mt-5">
                 {products.map(product=> <ProductItems key={product.id} product={product}/>)}
         </div>
         </div>
