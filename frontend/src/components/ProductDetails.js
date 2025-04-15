@@ -3,21 +3,20 @@ import './details.css'
 
 let ProductDetails = ({product}) =>{
 
-
     return (
     <div className="container my-5">
     <div className="row details-snippet1">
-        <div className="col-md-7">
+        <div className="col-md-6">
             <div className="row">
                 <div className="col-md-2 mini-preview">
                     <img className="img-fluid" src={product.image} alt="Preview"/>
-                    <img className="img-fluid" src="https://cdn.pixabay.com/photo/2015/07/24/18/38/model-858749_960_720.jpg" alt="Preview"/>
-                    <img className="img-fluid" src="https://cdn.pixabay.com/photo/2015/07/24/18/39/model-858751_960_720.jpg" alt="Preview"/>
-                    <img className="img-fluid" src="https://cdn.pixabay.com/photo/2015/07/24/18/37/model-858748_960_720.jpg" alt="Preview"/>
+                    <img className="img-fluid" src="" alt="Preview"/>
+                    <img className="img-fluid" src="" alt="Preview"/>
+                    <img className="img-fluid" src="" alt="Preview"/>
                 </div>
                 <div className="col-md-10">
-                    <div className="product-image">
-                        <img className="img-fluid" src={product.image} alt=""/>
+                    <div className="product-image" style={{marginLeft:50}}>
+                        <img className="img-fluid" style={{height:500}} src={product.image} alt=""/>
                     </div>
 
                 </div>
@@ -54,7 +53,7 @@ let ProductDetails = ({product}) =>{
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row mt-3">
                 <div className="col-md-3">
                     <input type="number" className="form-control" value="1"/>
                 </div>

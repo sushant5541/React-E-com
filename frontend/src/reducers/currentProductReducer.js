@@ -14,7 +14,7 @@ let initialState = {
 
 let currentProductReducer = (state=initialState, action) => {
     switch(action.type){
-        case ' SET_CURRENT_PRODUCT' :
+        case 'SET_CURRENT_PRODUCT' :
             console.log(action.payload)
             localStorage.setItem('currentProduct', JSON.stringify(action.payload))
         

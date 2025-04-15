@@ -39,8 +39,8 @@
     .select-colors .color {
         display: inline-block;
         border: 1px solid grey;
-        height: 35px;
-        width: 35px;
+        height: 25px;
+        width: 25px;
         border-radius: 50%;
         margin-right: 5px;
         background-color: black;

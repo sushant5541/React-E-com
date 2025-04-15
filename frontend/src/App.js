@@ -8,6 +8,7 @@ import Kids from './pages/Kids';
 import Living from './pages/Living';
 import Beauty from './pages/Beauty';
 import Details from './pages/Details';
+import Cart from './pages/Cart';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/beauty' element={<Beauty/>} />
         <Route path='/living' element={<Living/>} />
         <Route path='/details' element={<Details/>} />
+        <Route path='/cart' element={<Cart/>} />
       </Routes>
     
     </BrowserRouter>
