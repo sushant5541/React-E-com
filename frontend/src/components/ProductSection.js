@@ -5,14 +5,14 @@ function ProductSection(){
 
     const[products, setProduct] = useState([])
 
-        let getProducts = () =>{
+        useEffect(() => {
             fetch('https://fakestoreapi.com/products')
             .then(response => response.json())
             .then(data=>setProduct(data))
-        }
+            .catch(error => console.log("error fetching product:", error));
+        }, [])
     
 
-    useEffect(getProducts, [])
 
     return (
         <div className="container bg-white">

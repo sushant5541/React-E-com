@@ -3,7 +3,7 @@ import React from "react";
 function Carousel() {
   return (
 
-    <div className="container-fluid">
+    <div className="container-fluid px-0">
       <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -18,7 +18,7 @@ function Carousel() {
             <img style={{ height: "60vh" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvg73ugDQe8ILF_7dnzqtOQdz4uMW3SexnyaxAJekJz5QCz2ehtrFPU3edu0MvRm3x7cE&usqp=CAU" className="d-block w-100" alt="..."></img>
           </div>
           <div className="carousel-item">
-            <img style={{ height: "60vh" }} src="..." className="d-block w-100" alt="..."></img>
+            <img style={{ height: "60vh" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRVkoWj0KiO0GjUOIZNT0RdF0FpWl-23QrUYfLn-qXPuffUVzVoG4g0rX_Ak_PTDlFiUg&usqp=CAU" className="d-block w-100" alt="..."></img>
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

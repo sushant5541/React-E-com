@@ -4,7 +4,7 @@ import { Link, Outlet } from 'react-router-dom';
 function Navbar() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ margin: 10 }}>
+              <nav className="navbar navbar-expand-lg navbar-light bg-light w-100 px-0 mx-0">
                 <nav className="navbar navbar-light bg-light">
                     <div className="container-fluid">
                         <Link className="navbar-brand" to="/">
@@ -18,42 +18,62 @@ function Navbar() {
                     </div>
                 </nav>
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">ITDefined</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbar-supportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
                             <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="/">Home</Link>
+                            <Link className="nav-link" to="/">
+                                    <span className="me-1">Home</span>
+                                    <i className="fas fa-home"></i>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/men">Men</Link>
+                                <Link className="nav-link" to="/men">
+                                    <span className="me-1">Men</span>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/kids">Kids</Link>
+                                <Link className="nav-link" to="/women">
+                                <span className="me-1">Women</span>
+                                
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/women">Women</Link>
+                                <Link className="nav-link" to="/jewelery">
+                                <span className="me-1">Jewelery</span>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/beauty">Beauty</Link>
+                                <Link className="nav-link" to="/electronics">
+                                    <span className="me-1">Electronics</span>
+                                    
+                                </Link>
+                            </li>
+                            {/* <li className="nav-item">
+                                <Link className="nav-link" to="/living">
+                                    <span className="me-1">Living</span>
+                                 
+                                </Link>
+                            </li> */}
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/cart">
+                                    <span className="me-1">MyCart</span>
+                                    <i className="fas fa-shopping-bag"></i>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/living">Living</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" onClick="" to="/cart">
-                                    <li class="icon">
-                                        <span class="fas fa-shopping-bag"></span>
-                                    </li>
+                                <Link className="nav-link" to="/wishlist">
+                                    <span className="me-1">Wishlist</span>
+                                    <i className="fas fa-heart"></i>
                                 </Link>
                             </li>
                         </ul>
-                        <form className="d-flex">
+                        {/* <form className="d-flex">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        </form> */}
                     </div>
                 </div>
             </nav>

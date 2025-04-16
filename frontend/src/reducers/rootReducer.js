@@ -1,8 +1,8 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import userReducer from './userReducer';          // Should be default export
-import wishlistReducer from './wishlistReducer'; // Should be default export
-import cartReducer from './cartReducer';         // Should be default export
-import currentProductReducer from './currentProductReducer'; // Default import
+import userReducer from './userReducer';
+import wishlistReducer from './wishlistReducer';
+import cartReducer from './cartReducer';
+import currentProductReducer from './currentProductReducer';
 
 const rootReducer = combineReducers({
     user: userReducer,

@@ -13,6 +13,7 @@
   }
 }
 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -138,3 +139,36 @@
   color: #fff
 }
 
+/* Cart Page Styles */
+.table img {
+  max-width: 80px;
+}
+
+.input-group {
+  max-width: 120px;
+}
+
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.addBtn {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.addBtn:hover {
+  background-color: #ff5252;
+  color: white;
+}
+
+/* Quantity Input */
+.input-group button {
+  width: 30px;
+}
+
+
+.navbar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

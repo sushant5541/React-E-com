@@ -3,11 +3,11 @@ import React, {useState, useEffect} from "react";
 import ProductItems from "../components/product_items";
 import Navbar from '../components/Navbar';
 
-function Women(){
+function Beauty(){
     const[products, setProduct] = useState([])
 
     useEffect(() => {
-        fetch('https://fakestoreapi.com/products/category/women\'s clothing')
+        fetch('https://fakestoreapi.com/products/category/electronics')
         .then(response => response.json())
         .then(data=>setProduct(data))
         .catch(error => console.log("error fetching product:", error));
@@ -25,4 +25,4 @@ function Women(){
     )
 }
 
-export default Women;
+export default Beauty;
