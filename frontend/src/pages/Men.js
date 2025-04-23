@@ -1,4 +1,4 @@
-// In Men.js
+
 import React, {useState, useEffect} from "react";
 import ProductItems from "../components/product_items";
 import Navbar from '../components/Navbar';

@@ -101,8 +101,8 @@ let ProductDetails = ({ product }) => {
                         <button
     className="btn btn-success btn-block"
     onClick={() => {
-        handleAddToCart();
-        navigate('/payment'); // Redirect to payment page
+        // handleAddToCart();
+        // navigate('/payment'); // Redirect to payment page
     }}
 >
     Buy Now

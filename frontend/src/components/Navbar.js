@@ -1,7 +1,18 @@
 import React from "react";
 import { Link, Outlet } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { logout } from '../actions/authActions';
 
 function Navbar() {
+
+    const { isAuthenticated, user } = useSelector(state => state.user);
+    const dispatch = useDispatch();
+    
+    const handleLogout = () => {
+        dispatch(logout());
+    };
+
+
     return (
         <div>
               <nav className="navbar navbar-expand-lg navbar-light bg-light w-100 px-0 mx-0">
@@ -69,6 +80,36 @@ function Navbar() {
                                     <i className="fas fa-heart"></i>
                                 </Link>
                             </li>
+                            {isAuthenticated ? (
+                            <>
+                                <li className="nav-item">
+                                    <span className="nav-link">
+                                        Welcome, {user?.name}
+                                    </span>
+                                </li>
+                                <li className="nav-item">
+                                    <button 
+                                        className="nav-link btn btn-link"
+                                        onClick={handleLogout}
+                                    >
+                                        Logout
+                                    </button>
+                                </li>
+                            </>
+                        ) : (
+                            <>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/login">
+                                        Login
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/register">
+                                        Register
+                                    </Link>
+                                </li>
+                            </>
+                        )}
                         </ul>
                         {/* <form className="d-flex">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
